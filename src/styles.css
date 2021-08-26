@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: repeating-linear-gradient(
+    180deg,
+    #ffffff,
+    #ffffff 2px,
+    #f1f1f1 2px,
+    #f1f1f1 4px
+  );
+  overflow: hidden;
+  height: 100vh;
+}
+.container {
+  background-color: white;
+  padding: 0 80px;
+  border-left: 1px solid pink;
+  border-right: 1px solid pink;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.album-container {
+  width: 470px;
+  height: 200px;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 3px 3px 7px 0px rgba(197, 197, 197, 0.73);
+  margin: 20px;
+}
+
+.album-contenido {
+  width: 100%;
+  padding: 20px;
+  padding-left: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.album-titulo {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.album-subtitulo {
+  margin-top: 3px;
+  font-size: 15px;
+  color: rgb(109, 109, 109);
+  font-weight: normal;
+}
+
+.cronologia {
+  color: rgb(141, 141, 141);
+  font-size: 14px;
+}
+
+.album-descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.genero {
+  background-color: pink;
+  padding: 6px 12px;
+  margin-left: 4px;
+  border-radius: 15px;
+  font-size: 13px;
+}
+
+.artista-tipo {
+  font-style: italic;
+  font-size: 12px;
+  font-weight: lighter;
+  color: gray;
+  margin-top: -18px;
+  margin-bottom: 20px;
+}
+
+.select {
+  padding: 10px 20px;
+  margin: 14px 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.filtros {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 3px solid pink;
+  width: 500px;
+  display: flex;
+  padding-top: 30px;
+}
+
+.lista-album {
+  margin-top: 20px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.album-pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.album-pie img {
+  cursor: pointer;
+}
